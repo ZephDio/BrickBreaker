@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html  lang="fr">
+<head>
+	<meta  charset="UTF-8">
+	<meta  name="viewport"  content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Style/style.css">
+	<link rel="stylesheet" href="Style/normalize.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#c33f3f">
+		<meta name="apple-mobile-web-app-title" content="Brick Breaker">
+		<meta name="application-name" content="Brick Breaker">
+		<meta name="msapplication-TileColor" content="#c33f3f">
+		<meta name="theme-color" content="#c33f3f">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+	<title>CASSE-BRIQUE 2000</title>
+</head>
+<body>
+	<div style="display:none;">
+	  <img id="bille" 			src="BB_ressource/bille.png">
+	  <img id="billeRed"  		src="BB_ressource/billeRed.png">
+	  <img id="backGround"		src="BB_ressource/backGround.png">
+	  <img id="brique"			src="BB_ressource/brique.png">
+	  <img id="plateLeft" 		src="BB_ressource/plateLeft.png">
+	  <img id="plateRight"		src="BB_ressource/plateRight.png">
+	  <img id="plateCenter" 	src="BB_ressource/plateCenter.png">
+	  <img id="briqueRed" 		src="BB_ressource/briqueRed.png">
+	  <img id="briqueBlue"		src="BB_ressource/briqueBlue.png">
+	  <img id="briqueYellow"	src="BB_ressource/briqueYellow.png">
+	  <img id="briquePurple"	src="BB_ressource/briquePurple.png">
+	  <img id="briqueGreen" 	src="BB_ressource/briqueGreen.png">
+	  <img id="briqueOrange"	src="BB_ressource/briqueOrange.png">
+	  <img id="GameOver"		src="BB_ressource/GameOver.png">
+	</div>
+	<header>
+		<div style="width:150px"></div>
+		<h1>CASSE-BRIQUE 2000</h1>
+		<div style="width:150px"><p class="login">login <i class="fas fa-sign-in-alt"></i></p></div>
+		<div class="modal modallogin">
+			<form class="cardmodal cardlogin">
+				<h3>LOGIN</h3>
+				<input type="" name="" placeholder="Username">
+				<input type="password" name="" placeholder="Password">
+				<button type="sumbit" name="Login" value="Login">Login</button>
+				<button id="register" type="button" name="registerlink">Register now</button>
+			</form>
+		</div>
+		<div class="modal modalregister">
+			<form class="cardmodal cardregister" @submit.prevent="createContact">
+				<h3>REGISTER</h3>
+				<input  type="email"    v-model="email"			  placeholder="E-mail">
+				<input  type=""		    v-model="Username"		  placeholder="Username">
+				<input  type="password" v-model="Password"		  placeholder="Password">
+				<input  type="password" v-model="ConfirmPassword" placeholder="Confirme Password">
+				<button type="submit" name="register" value="register">Register</button>
+			</form>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<canvas  width="1000"  height="600"  id="canvas"></canvas>
+			
+			<h2>Lorem ipsum dolor sit amet.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, neque, provident, magni maxime cumque aut obcaecati alias modi similique quibusdam vero error incidunt! Sed eaque maiores beatae et voluptatem magni quis placeat saepe dolorum? Officia, iste, expedita, eaque, quod consectetur maiores ab porro fugiat ad dolorum facilis fugit quibusdam quasi culpa odio molestiae commodi distinctio numquam accusantium temporibus! Repudiandae, culpa, eius, dolore voluptatibus eveniet provident ad eum quod in animi modi dolor ratione ab praesentium itaque numquam velit maiores et veritatis consequatur minima? Necessitatibus, voluptatem, at, aperiam modi eveniet delectus obcaecati provident laudantium quibusdam amet vel inventore illo minima nemo possimus id eos veniam rem sunt adipisci omnis blanditiis culpa consequatur totam corrupti. Beatae, libero, magni praesentium delectus nemo at laudantium ullam deleniti dolorem laborum. Itaque, tempore, repellat, voluptates, adipisci ipsum minus similique quam dolorum tenetur esse debitis voluptatum possimus quaerat veniam ipsa ullam accusantium! Quaerat eos soluta necessitatibus explicabo.</p>
+	
+			
+			
+			
+			
+		</div>
+	</main>
+	<footer>
+		
+	</footer>
+			<!-- Mes import -->
+			<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+			<script src="https://kit.fontawesome.com/e05b1b28a5.js" crossorigin="anonymous"></script>
+			
+			<!-- Mes Script -->
+			<script  src="scripts/modal.js"></script>
+			<script  src="scripts/formulaire.js"></script>
+			<script src="scripts/prevent_spaceBar.js"></script>
+			
+			<!-- BRICK BREAKER -->
+			<script  src="KeyManager1.js"></script>
+			<script  src="KeyPressManager.js"></script>
+			<script  src="BuffManager1.js"></script>
+			<script  src="Timer1.js"></script>
+			<script  src="Ball1.js"></script>
+			<script  src="Brick1.js"></script>
+			<script  src="Plate1.js"></script>
+			<script  src="Level1.js"></script>
+			<script  src="BuffPod1.js"></script>
+			<script  src="Game1.js"></script>
+			<script  src="BrickBreaker.js"></script>
+			<script  src="Renderer1.js"></script>
+</body>
+</html>
