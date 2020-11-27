@@ -1,0 +1,16 @@
+[
+    {
+        "username": "Zephitos",
+        "email" : "nicolasroure@hotmail.fr",
+        "password" :"1235",
+        "achivments" : {
+                            "reachlvl3" : true,
+                            "reachlvl5" : false,
+                            "reachlvl10": false,
+                            "4ballsatonce" : false
+                        }
+    }
+
+
+
+]
